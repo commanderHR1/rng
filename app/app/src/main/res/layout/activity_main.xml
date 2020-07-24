@@ -6,11 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="194dp"
+        android:layout_height="169dp"
+        android:contentDescription="@string/main_dice_logo"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183"
+        app:srcCompat="@drawable/dice_logo" />
+
     <Button
         android:id="@+id/btnGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go!"
+        android:importantForAccessibility="yes"
+        android:text="@string/btnGo_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -19,40 +34,57 @@
         app:layout_constraintVertical_bias="0.727" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/txtLow"
         android:layout_width="80dp"
         android:layout_height="70dp"
         android:autofillHints="0"
         android:ems="10"
-        android:inputType="number"
+        android:hint="@string/txtLow_hint"
+        android:inputType="numberSigned|number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/lblView"
         app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/txtHigh"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:autofillHints="10"
+        android:ems="10"
+        android:hint="@string/txtHigh_hint"
+        android:inputType="numberSigned|number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/lblView"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/lblView"
         android:layout_width="33dp"
         android:layout_height="41dp"
-        android:text="to"
+        android:text="@string/lblTo_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:autofillHints="10"
-        android:ems="10"
-        android:inputType="number"
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="211dp"
+        android:layout_height="57dp"
+        android:text="@string/lblResult_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
