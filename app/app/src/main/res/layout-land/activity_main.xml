@@ -109,7 +109,7 @@
         android:layout_marginBottom="10dp"
         android:autoSizeTextType="uniform"
         android:enabled="false"
-        android:text="Copy to Clipboard"
+        android:text="@string/btnClipboard_text"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

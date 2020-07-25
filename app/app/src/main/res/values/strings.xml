@@ -7,4 +7,5 @@
     <string name="txtLow_hint">0</string>
     <string name="txtHigh_hint">10</string>
     <string name="resultError">Result: Error!</string>
+    <string name="btnClipboard_text">Copy to Clipboard</string>
 </resources>
