@@ -8,16 +8,16 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="194dp"
-        android:layout_height="169dp"
+        android:layout_width="185dp"
+        android:layout_height="150dp"
         android:contentDescription="@string/main_dice_logo"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/dice_logo" />
 
     <Button
@@ -29,16 +29,17 @@
         android:text="@string/btnGo_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblView"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.254" />
 
     <EditText
         android:id="@+id/txtLow"
         android:layout_width="80dp"
         android:layout_height="70dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="10dp"
         android:autofillHints="0"
         android:ems="10"
         android:hint="@string/txtLow_hint"
@@ -46,15 +47,17 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/lblView"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
 
     <EditText
         android:id="@+id/txtHigh"
         android:layout_width="80dp"
         android:layout_height="70dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints="10"
         android:ems="10"
         android:hint="@string/txtHigh_hint"
@@ -84,32 +87,35 @@
         android:layout_height="58dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
-        android:enabled="true"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"
         android:gravity="center|center_vertical"
         android:text="@string/lblResult_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
 
     <Button
         android:id="@+id/btnClipboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:autoSizeTextType="uniform"
         android:enabled="false"
         android:text="Copy to Clipboard"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblResult"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
